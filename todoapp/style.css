@@ -1,0 +1,416 @@
+/* STYLE SHEET */
+body{
+	
+	padding:0px;
+	margin:0px;
+	background-color:#BBEAF1;
+	width:100%;
+	overflow:hidden;
+}
+
+h1{
+	color: #580B0B;
+	font-size: 3rem;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-family:monospace;
+}
+
+@keyframes CloudAnimted {
+    0%   {left:-20%;}
+    25%  {left:20%;}
+    50%  {left:50%;}
+    75%  {left:70%;}
+    100% {left:100%;}
+}
+
+@keyframes EyeAnimation{
+	
+	 0%   {    left: 25%;}
+    25%  {left:35%;}
+    50%  {left:40%;}
+    75%  {left:50%;}
+    100% {left:30%;}
+}
+
+@keyframes FlowersAnimation{
+	 0%   {    top: -19%;     transform: rotate(0deg);}
+    25%  {top:10%;     transform: rotate(42deg);}
+    50%  {top:40%; transform: rotate(20deg);}
+    75%  {top:80%; transform: rotate(40deg);}
+    100% {top:110%; transform: rotate(0deg);}
+}
+
+.Clouds{
+	position:relative;
+	top:-450px;
+	left:-20%;
+	height:250px;
+	width:400px;
+	/*background-color:yellow;*/
+	animation: CloudAnimted 100s linear 0s infinite ;
+	z-index:1;
+
+}
+
+
+
+.Clouds .Cloud1{
+	height:200px;
+	width:200px;
+	background-color:white;
+	border-radius:100%;
+	margin:20px;
+	position:absolute;
+	left:20%;
+	bottom:0%;
+
+	
+}
+
+.Clouds .Cloud2{
+	height:100px;
+	width:100px;
+	background-color:white;
+	border-radius:100%;
+	margin:20px;
+	position:absolute;
+	left:10%;
+	bottom:0%;
+	/*border:5px solid #8BC34A;*/
+
+}
+.Clouds .Cloud3{
+	height:150px;
+	width:150px;
+	background-color:white;
+	border-radius:100%;
+	margin:20px;
+	position:absolute;
+	bottom:0%;
+	right:0%;
+	/*border:5px solid #8BC34A;*/
+}
+
+.Clouds2{
+	top:10%;
+	position:relative;
+	left:-20%;
+	height:250px;
+	width:400px;
+	/*background-color:yellow;*/
+	    animation: CloudAnimted 150s linear 0s infinite ;
+		z-index:0;
+}
+
+.Clouds2 .Cloud1{
+	height:150px;
+	width:150px;
+	background-color:#F5FFFF;
+	border-radius:100%;
+	margin:20px;
+	position:absolute;
+	left:20%;
+	bottom:0%;
+
+	
+}
+
+.Clouds2 .Cloud2{
+	height:100px;
+	width:100px;
+	background-color:#F5FFFF;
+	border-radius:100%;
+	margin:20px;
+	position:absolute;
+	left:10%;
+	bottom:0%;
+	/*border:5px solid #8BC34A;*/
+
+}
+.Clouds2 .Cloud3{
+	height:90px;
+	width:90px;
+	background-color:#F5FFFF;
+	border-radius:100%;
+	margin:20px;
+	position:absolute;
+	bottom:0%;
+	right:20%;
+	/*border:5px solid #8BC34A;*/
+}
+.mask{
+	left:-100%;
+	top:-187px;
+animation: CloudAnimted 160s linear 10s infinite ;
+
+}
+.wood{
+	top: -200px;
+	position:relative;
+	z-index:9;
+	width:100%;
+	height:10px;
+	background-color:#545453;
+	
+}
+/*
+--------------------------------
+
+ generating The Body Of The Owl 
+
+--------------------------------
+*/
+
+
+/*This is The head */
+.OwlHead{
+	position:relative;
+    top: -494px;
+    left: 52%;
+	height:150px;
+	width:170px;
+	border-radius:100%;
+	background-color:#881414;
+	background: #c11613; /* Old browsers */
+background: -moz-radial-gradient(center, ellipse cover, #c11613 0%, #771202 100%); /* FF3.6-15 */
+background: -webkit-radial-gradient(center, ellipse cover, #c11613 0%,#771202 100%); /* Chrome10-25,Safari5.1-6 */
+background: radial-gradient(ellipse at center, #c11613 0%,#771202 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c11613', endColorstr='#771202',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+	z-index:11;
+
+}
+/* 	Owls Ears */
+/*right ear*/
+.OwlHead::before {
+    content: "";
+    position: absolute;
+    height: 0;
+    width: 0;
+    border-bottom: 24px solid #881414;
+    border-top: 24px solid transparent;
+    border-right: 24px solid transparent;
+    border-left: 24px solid transparent;
+    right: -6%;
+    top: -12%;
+    transform: rotate(42deg);
+}
+
+
+/* Left ear */
+.OwlHead::after {
+    content: "";
+    position: absolute;
+    height: 0;
+    width: 0;
+    border-bottom: 24px solid #881414;
+    border-top: 24px solid transparent;
+    border-right: 24px solid transparent;
+    border-left: 24px solid transparent;
+    left: -6%;
+    top: -12%;
+    transform: rotate(-42deg);
+}
+
+.OwlEye{
+	position:relative;
+	    top: -609px;
+    left: 54%;
+    z-index: 12;
+    height: 59px;
+    width: 59px;
+	background-color:brown;
+	background: #c11613; /* Old browsers */
+background: -moz-radial-gradient(center, ellipse cover, #c11613 0%, #771202 100%); /* FF3.6-15 */
+background: -webkit-radial-gradient(center, ellipse cover, #c11613 0%,#771202 100%); /* Chrome10-25,Safari5.1-6 */
+background: radial-gradient(ellipse at center, #c11613 0%,#771202 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c11613', endColorstr='#771202',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+	border-radius:100%;
+}
+.right{
+	    top: -667px;
+    left: 60%;
+}
+/*Owls Eyes*/
+
+.OwlContentEye{
+	position:relative;
+	z-index: 12;
+	 height: 40px;
+    width: 40px;
+	background-color:White;
+	border-radius:100%;
+	top: -718px;
+	
+    left: 55%;
+	
+}
+.OwlContentEye::before{
+	position:absolute;
+	content:'';
+	left: 26%;
+    top: 28%;
+	Z-INDEX:13;
+	height:20px;
+	width:20px;
+	border-radius:100%;
+	background-color:black;
+		animation: EyeAnimation 5s linear 0s infinite ;
+
+}
+.OwlContentEye::after{
+	position:absolute;
+	content:'';
+	left: 44%;
+    top: 28%;
+	Z-INDEX:13;
+	height:10px;
+	width:10px;
+	border-radius:100%;
+	background-color:white;
+}
+
+.Rightc{
+	    left: 60.6%;
+		TOP: -757PX;
+}
+/*Owl Mouth */
+
+.OwlMouth{
+	position:relative;
+	border-top: 13px solid #FFEB3B;
+    border-bottom: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-left: 10px solid transparent;
+	    top: -756px;
+    left: 58.7%;
+	height:0px;
+	width:0px;
+	
+	z-index:12;
+}
+
+/*This is the body*/
+.OwlBody{
+	position:relative;
+	top:-768px;
+	z-index:10;
+	left:50%;
+	height:200px;
+	width:200px;
+	border-radius:100%;
+	background-color:#881414;
+	background: #c11613; /* Old browsers */
+background: -moz-radial-gradient(center, ellipse cover, #c11613 0%, #771202 100%); /* FF3.6-15 */
+background: -webkit-radial-gradient(center, ellipse cover, #c11613 0%,#771202 100%); /* Chrome10-25,Safari5.1-6 */
+background: radial-gradient(ellipse at center, #c11613 0%,#771202 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c11613', endColorstr='#771202',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+	overflow:hidden;
+}
+/*After and Before represent The Wings of The Owl */
+.OwlBody::after{
+	position:absolute;
+	content:'';
+	right:-50%;
+	height:150px;
+	width:150px;
+	background-color:#580B0B;
+	border:5px solid #771212;
+	border-radius:100%;
+
+}
+
+.OwlBody::before{
+	position:absolute;
+	content:'';
+	left:-50%;
+	height:150px;
+	width:150px;
+	background-color:#580B0B;
+		border:5px solid #771212;
+	border-radius:100%;
+
+}
+/* Owls feet*/
+.feet{
+	
+	    position: absolute;
+        left: 25.7%;
+    top: 89%;
+    height: 20px;
+    width: 100px;
+    /*background: red;*/
+    z-index: 14;
+}
+.feet .toe{
+	
+	    background: #FFEB3B;
+    height: 20px;
+    width: 7px;
+    border-radius: 100%;
+	    display: inline-block;
+    margin: 0;
+}
+/*Push tree Toes to the left and the others to the right side */
+.leftit{
+	float:left;
+}
+.Rightit{
+	    float: right;
+}
+
+/*Flying Flowers*/
+
+.FlyingFlowers{
+	z-index:15;
+	    position: fixed;
+    height: 100px;
+    width: 50px;
+    top: -19%;
+    left: 30%;
+    background: green;
+    border-radius: 100%;
+		animation: FlowersAnimation 20s linear 0s infinite ;
+
+}
+.FlyingFlowers::after {
+    /* border-top: 27px solid transparent; */
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-bottom: 29px solid green;
+    content: "";
+    position: absolute;
+    top: -11%;
+    left: 10%;
+}
+.FlyingFlowers::before {
+    border-top: 29px solid green;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    /* border-bottom: 29px solid green; */
+    content: "";
+    position: absolute;
+    bottom: -11%;
+    left: 11%;
+}
+.Fone{
+	left:50%;
+	animation: FlowersAnimation 20s linear  2s infinite ;
+
+}
+.Ftwo{
+	left:70%;
+	animation: FlowersAnimation 20s linear 5s infinite ;
+
+}
+.Ftree{
+	left:10%;
+	animation: FlowersAnimation 20s linear 10s infinite ;
+
+}
+.Ffore{
+	left:20%;
+	animation: FlowersAnimation 20s ease-in-out 6s infinite ;
+
+}
